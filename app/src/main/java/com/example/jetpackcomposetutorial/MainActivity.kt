@@ -16,31 +16,19 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            JetPackcomposeTutorialTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
-            }
+            Text(text = "Hello bharat")
         }
     }
 }
 
+    @Preview(showBackground = true , name = "my name message" , showSystemUi = true)
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun sayBharat(name : String = "bharat anu"){
+    Text(text = name)
 }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    JetPackcomposeTutorialTheme {
-        Greeting("Android")
-    }
-}
+//    @Preview(showBackground = true , name = "my message")
+//    @Composable
+//    fun sayMyMessage(name : String = "what is your name "){
+//        Text(text = name)
+//    }
