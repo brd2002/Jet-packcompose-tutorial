@@ -42,7 +42,8 @@ class MainActivity : ComponentActivity() {
 //            InputText()
 //            sayBharat()
 //            circulerImage()
-            previewItem()
+//            previewItem()
+            NotificationScreen()
         }
     }
 }
